@@ -8,19 +8,19 @@ defmodule Derivative do
   | {:cos, expr()}
   | literal()
 
-  #def test() do
-  #  #a = {:add, {:mul, {:num, 2}, {:var, :x}}, {:num, 3}}
-  #  a ={:exp, {:sin, {:mul, {:num, 2}, {:var, :x}}}, {:num,-1}}
-  #  #a = {:exp, {:var, :x}, {:num, 2}}
-  #  b = deriv(a, :x)
-  #  c = simplify(b)
-  #  IO.write("Expression: #{pprint(a)} \n")
-  #  IO.write("Derivative: #{pprint(b)} \n")
-  #  #IO.inspect(a)
-  #  #IO.inspect(b)
-  #  #IO.inspect(c)
-  #  IO.write("Simplified: #{pprint(c)} \n")
-  #end
+  def test() do
+    #a = {:add, {:mul, {:num, 2}, {:var, :x}}, {:num, 3}}
+    a ={:exp, {:sin, {:mul, {:num, 2}, {:var, :x}}}, {:num,-1}}
+    #a = {:exp, {:var, :x}, {:num, 2}}
+    b = deriv(a, :x)
+    c = simplify(b)
+    IO.write("Expression: #{pprint(a)} \n")
+    IO.write("Derivative: #{pprint(b)} \n")
+    #IO.inspect(a)
+    #IO.inspect(b)
+    #IO.inspect(c)
+    IO.write("Simplified: #{pprint(c)} \n")
+  end
 
   def test1() do
     e = {:add,
